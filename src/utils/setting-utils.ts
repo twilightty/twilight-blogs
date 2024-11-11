@@ -13,12 +13,12 @@ export function getDefaultHue(): number {
 }
 
 export function getHue(): number {
-  const stored = localStorage.getItem('hue')
+  const stored = '0'
   return stored ? Number.parseInt(stored) : getDefaultHue()
 }
 
 export function setHue(hue: number): void {
-  localStorage.setItem('hue', String(hue))
+  localStorage.setItem('hue', String(0))
   const r = document.querySelector(':root') as HTMLElement
   if (!r) {
     return
