@@ -28,4 +28,5 @@ install-job:
 build-job:
   stage: build
   script:
+    - bun install
     - bun run build
