@@ -43,8 +43,8 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.Archive,
     LinkPreset.About,
     {
-      name: 'GitHub',
-      url: 'https://github.com/twilightty',     // Internal links should not include the base path, as it is automatically added
+      name: 'GitLab',
+      url: 'https://gitlab.twilight.fyi',     // Internal links should not include the base path, as it is automatically added
       external: true,                               // Show an external link icon and will open in a new tab
     },
   ],
@@ -53,7 +53,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/avatar.jpg',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'Nghia Tran',
-  bio: 'Devops / Fullstack Developer',
+  bio: 'DevOps / Fullstack Developer',
   links: [
     {
       name: 'Facebook',
