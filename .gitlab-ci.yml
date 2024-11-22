@@ -17,16 +17,11 @@
 # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Getting-Started.gitlab-ci.yml
 
 stages:    
-  - install
   - build
-
-install-deps:
-  stage: install
-  script:
-    - bun install
 
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
   script:
+    - bun install
     - echo "Compiling the code..."
     - bun run build 
