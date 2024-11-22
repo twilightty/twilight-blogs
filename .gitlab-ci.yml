@@ -16,12 +16,16 @@
 # This specific template is located at:
 # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Getting-Started.gitlab-ci.yml
 
-stages:    
+stages:
+  - install
   - build
 
-build-job:       # This job runs in the build stage, which runs first.
-  stage: build
+install-job:
+  stage: install
   script:
     - bun install
-    - echo "Compiling the code..."
-    - bun run build 
+
+build-job:
+  stage: build
+  script:
+    - bun run build
