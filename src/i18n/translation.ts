@@ -4,9 +4,9 @@ import { en } from './languages/en'
 import { es } from './languages/es'
 import { ja } from './languages/ja'
 import { ko } from './languages/ko'
+import { vi } from './languages/vi'
 import { zh_CN } from './languages/zh_CN'
 import { zh_TW } from './languages/zh_TW'
-import { vi } from './languages/vi'
 
 export type Translation = {
   [K in I18nKey]: string
