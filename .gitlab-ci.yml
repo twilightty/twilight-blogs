@@ -22,11 +22,15 @@ stages:
 
 install-job:
   stage: install
+  tags:
+    - linux
   script:
     - bun install
 
 build-job:
   stage: build
+  tags:
+    - linux
   script:
     - bun install
     - bun run build
