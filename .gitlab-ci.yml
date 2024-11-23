@@ -19,6 +19,8 @@
 stages:
   - install
   - build
+  - deploy-preview
+  - deploy-production
 
 install-job:
   stage: install
@@ -40,3 +42,17 @@ build-job:
     expire_in: 30 days
     paths:
       - "dist/*"
+
+deploy-prev:
+  stage: deploy-preview
+  tags:
+    - linux
+  script:
+    - vercel deploy --token=$VERCEL_TOKEN
+
+deploy-prod:
+  stage: deploy-production
+  tags:
+    - linux
+  script:
+    - vercel deploy --prod --token=$VERCEL_TOKEN
