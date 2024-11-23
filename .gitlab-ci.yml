@@ -48,11 +48,11 @@ deploy-prev:
   tags:
     - linux
   script:
-    - vercel deploy --token=$VERCEL_TOKEN
+    - vercel deploy --token=$VERCEL_TOKEN --yes
 
 deploy-prod:
   stage: deploy-production
   tags:
     - linux
   script:
-    - vercel deploy --prod --token=$VERCEL_TOKEN
+    - vercel deploy --prod --token=$VERCEL_TOKEN --yes
