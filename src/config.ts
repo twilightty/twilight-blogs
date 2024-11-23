@@ -47,6 +47,11 @@ export const navBarConfig: NavBarConfig = {
       url: 'https://gitlab.twilight.fyi',     // Internal links should not include the base path, as it is automatically added
       external: true,                               // Show an external link icon and will open in a new tab
     },
+    {
+      name: 'Mirrors',
+      url: 'https://mirrors.twilight.fyi',     // Internal links should not include the base path, as it is automatically added
+      external: true,                               // Show an external link icon and will open in a new tab
+    },
   ],
 }
 
