@@ -48,6 +48,7 @@ deploy-prev:
   tags:
     - linux
   script:
+    - vercel link --yes --project=twilight-blogs --token=$VERCEL_TOKEN
     - vercel deploy --token=$VERCEL_TOKEN --yes
 
 deploy-prod:
@@ -57,4 +58,5 @@ deploy-prod:
   only:
     - main
   script:
+    - vercel link --yes --project=twilight-blogs --token=$VERCEL_TOKEN
     - vercel deploy --prod --token=$VERCEL_TOKEN --yes
