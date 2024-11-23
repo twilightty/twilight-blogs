@@ -19,8 +19,6 @@
 stages:
   - install
   - build
-  - deploy-preview
-  - deploy-production
 
 install-job:
   stage: install
@@ -42,21 +40,3 @@ build-job:
     expire_in: 30 days
     paths:
       - "dist/*"
-
-deploy-prev:
-  stage: deploy-preview
-  tags:
-    - linux
-  script:
-    - vercel link --yes --project=twilight-blogs --token=$VERCEL_TOKEN
-    - vercel deploy --token=$VERCEL_TOKEN --yes
-
-deploy-prod:
-  stage: deploy-production
-  tags:
-    - linux
-  only:
-    - main
-  script:
-    - vercel link --yes --project=twilight-blogs --token=$VERCEL_TOKEN
-    - vercel deploy --prod --token=$VERCEL_TOKEN --yes
