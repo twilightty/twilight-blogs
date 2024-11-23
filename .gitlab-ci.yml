@@ -54,5 +54,7 @@ deploy-prod:
   stage: deploy-production
   tags:
     - linux
+  only:
+    - main
   script:
     - vercel deploy --prod --token=$VERCEL_TOKEN --yes
