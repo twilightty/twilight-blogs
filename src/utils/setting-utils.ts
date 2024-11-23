@@ -19,17 +19,20 @@ export function getHue(): number {
 }
 
 export function setHue(hue: number): void {
+  var Hue:string;
+
   if (siteConfig.themeColor.fixed) {
     localStorage.setItem('hue', String(siteConfig.themeColor.hue))
+    Hue = String(siteConfig.themeColor.hue)
   } else {
     localStorage.setItem('hue', String(hue))
+    Hue = String(hue)
   }
-  
   const r = document.querySelector(':root') as HTMLElement
   if (!r) {
     return
   }
-  r.style.setProperty('--hue', String(hue))
+  r.style.setProperty('--hue', String(Hue))
 }
 
 export function applyThemeToDocument(theme: LIGHT_DARK_MODE) {
