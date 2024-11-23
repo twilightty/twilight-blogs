@@ -19,7 +19,7 @@ export const siteConfig: SiteConfig = {
     src: 'assets/images/banner.jpeg',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
     position: 'center',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
     credit: {
-      enable: true,         // Display the credit text of the banner image
+      enable: false,         // Display the credit text of the banner image
       text: 'Photo by Bowen Chin on Unsplash',              // Credit text to be displayed
       url: 'https://unsplash.com/photos/stones-on-body-of-water-uSaUiPr4Bfw'                // (Optional) URL link to the original artwork or artist's page
     }
