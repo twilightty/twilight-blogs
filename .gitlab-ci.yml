@@ -17,8 +17,31 @@
 # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Getting-Started.gitlab-ci.yml
 
 stages:
+  - install
+  - build
   - deploy-preview
   - deploy-production
+
+install-job:
+  stage: install
+  tags:
+    - linux
+  script:
+    - bun install
+
+build-job:
+  stage: build
+  tags:
+    - linux
+  script:
+    - bun install
+    - bun run build
+  artifacts:
+    when: on_success
+    access: all
+    expire_in: 30 days
+    paths:
+      - "dist/*"
 
 deploy-prev:
   stage: deploy-preview
