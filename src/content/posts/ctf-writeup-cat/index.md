@@ -1,6 +1,6 @@
 ---
 title: CTF Writeup - Cat
-published: 2024-02-13
+published: 2025-02-13
 description: "Walkthrough qua cách pwn machine 'Cat' trên Hackthebox (Season 7)"
 image: './banner.jpg'
 tags: [hacking, ctf]
