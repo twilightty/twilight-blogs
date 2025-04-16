@@ -420,9 +420,9 @@ root@cat:~# cat root.txt
 b6c7d37c02f5891f0e25cc098fae0172
 ```
 
-<details>
-  <summary>for tomorrow 🎀</summary>
-  
-  Chúc u mai (nay) phỏng vấn thật tự tin nha, cố gắng nhé, me tin u làm được :3
-  - twilight @ 2am 13/02
-</details>
+<!-- <details> -->
+<!--   <summary>for tomorrow 🎀</summary> -->
+<!---->
+<!--   Chúc u mai (nay) phỏng vấn thật tự tin nha, cố gắng nhé, me tin u làm được :3 -->
+<!--   - twilight @ 2am 13/02 -->
+<!-- </details> -->
